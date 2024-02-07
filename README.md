@@ -10,6 +10,8 @@ compared the full Bort SDK.
 
 `adb` is required for installation: `brew install android-platform-tools`.
 
+Download `bort-lite-release.zip` (contains apk and install script).
+
 Install Bort Lite:
 
 ```
@@ -34,11 +36,11 @@ bort_cli.py dev-mode --bort-app-id com.memfault.bort.lite --enabled true
 (Enabling dev mode will configure Bort to upload all data immediately, and
 bypass device-side rate-limits).
 
+Collect metrics (once Dev Mode is enabled):
+
 ```
 bort_cli.py request-metrics --bort-app-id com.memfault.bort.lite
 ```
-
-Collect metrics.
 
 ## Building
 
