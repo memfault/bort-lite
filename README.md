@@ -3,10 +3,13 @@
 This pre-built apk gives a preview of the Bort SDK, without requiring a full
 AOSP integration/build. Install on any device with `adb` access.
 
-See the main Bort repo for changelog.
+See the
+[main Bort repo](https://github.com/memfault/bort/blob/master/CHANGELOG.md) for
+changelog.
 
-See [Documentation](https://todo) for more details, including limitations
-compared the full Bort SDK.
+See [Documentation](https://mflt.io/bort-lite) for more details, including
+limitations compared the full Bort SDK. A full feature matrix can be found
+[here](https://mflt.io/android-features).
 
 `adb` is required for installation: `brew install android-platform-tools`.
 
@@ -46,5 +49,3 @@ bort_cli.py request-metrics --bort-app-id com.memfault.bort.lite
 
 Unlike the full Bort SDK (which is built from source), Bort Lite is pre-built
 and pre-signed for ease of use.
-
-If you wish to build the Bort Lite apk locally, please contact Memfault support.
