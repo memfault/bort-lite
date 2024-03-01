@@ -15,10 +15,18 @@ limitations compared the full Bort SDK. A full feature matrix can be found
 
 Download `bort-lite-release.zip` (contains apk and install script).
 
-Install Bort Lite:
+## Install Bort Lite
+
+Mac/Linux
 
 ```
 ./install-bort-lite.sh <project-key> [root]
+```
+
+Windows
+
+```
+install-bort-lite.bat <project-key> [root]
 ```
 
 A project key is required. Create a project in the Memfault dashboard before
@@ -29,21 +37,9 @@ device (to enable more Bort features). This will output errors if device isn't
 rooted (but Bort will still work). Only do this if you are happy to disable
 selinux enforcement!
 
-Once installed, you can use Dev Mode to trigger actions (`bort_cli.py` is
-available in the main Bort repo):
-
-```
-bort_cli.py dev-mode --bort-app-id com.memfault.bort.lite --enabled true
-```
-
-(Enabling dev mode will configure Bort to upload all data immediately, and
-bypass device-side rate-limits).
-
-Collect metrics (once Dev Mode is enabled):
-
-```
-bort_cli.py request-metrics --bort-app-id com.memfault.bort.lite
-```
+Dev Mode is enabled automatically. This will configure Bort to upload all data
+immediately, and bypass device-side rate-limits. Consider also enabling
+[Server-side Dev Mode](https://docs.memfault.com/docs/platform/rate-limiting/#server-side-developer-mode).
 
 ## Building
 
